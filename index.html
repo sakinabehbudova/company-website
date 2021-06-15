@@ -11,6 +11,8 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -21,18 +23,30 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <title>Title of the document</title>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <title>Company Website</title>
 </head>
 
 <body>
+  <!--Header -->
   <div id="header">
     <div class="container">
+      <button id="back-to-top-btn">
+        <span> &#8593;</span>
+      </button>
       <div class="row">
         <div class="col-8 d-flex justify-content-between">
-          <div class="dark-mode ">
-            <div>Dark Mode</div>
+          <div class="dark-mode row">
+         <div>Dark mode</div>
+            <div>
+              <input type="checkbox" id="checkbox" class="checkbox">
+              <label class="label" for="checkbox">
+                <div class="ball"></div>
+              </label>
+            </div>
           </div>
-          <div class="phone-number row mr-0">
+          <div class="phone-number row">
             <i class="fas fa-phone-alt"></i>
             <div>+994 12 5655723</div>
           </div>
@@ -56,6 +70,7 @@
 
     </div>
   </div>
+  <!--Navbar -->
   <div id="navbar">
     <div class="container">
       <div class="d-flex justify-content-between">
@@ -66,11 +81,12 @@
           <li><a href="#">Xidmətlərimiz</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Bloq</a></li>
-          <li><button class="btn">BİZDƏN GÖRÜŞ AL</button></li>
+          <li><button class="btn3">BİZDƏN GÖRÜŞ AL</button></li>
         </ul>
       </div>
     </div>
   </div>
+  <!--Home -->
   <div id="home">
     <div id="firstCarousel">
       <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
@@ -91,7 +107,7 @@
               </p>
             </div>
             <img src="images/Group 482.png" alt="image1" class="image1">
-          
+
           </div>
           <div class="carousel-item">
             <div class="carousel-content">
@@ -111,7 +127,7 @@
               </p>
             </div>
             <img src="images/Group 482.png" alt="image1" class="image1 img-responsive">
-          
+
           </div>
           <div class="carousel-item">
             <div class="carousel-content">
@@ -121,13 +137,14 @@
               </p>
             </div>
             <img src="images/Group 482.png" alt="image1" class="image1 img-responsive">
-          
+
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="add-home">
+  <!--Add Page 1-->
+  <div id="add-page1">
     <div class="container">
       <div class="row">
         <button class="btn1">XİDMƏTLƏRİMİZ</button>
@@ -135,6 +152,7 @@
       </div>
     </div>
   </div>
+  <!--Services -->
   <div id="services">
     <div class="container">
       <div class="row d-flex justify-content-between">
@@ -146,64 +164,81 @@
             ocean. Far far
             away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
           </p>
-          <button class="btn">
+          <button class="btn3">
             Bİzİmlə əlaqə
           </button>
         </div>
         <div class="col-md-4">
-          <div class="cart-item">
-
-            <img class="card-icon" src="images/Group 375.png" alt="">
-
-            <div class="cart-title">Seo</div>
-            <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque duis
-              sit in.</div>
-          </div>
+          <a href="#">
+            <div class="cart-item">
+              <img class="card-icon" src="images/Group 375.png" alt="">
+              <div class="cart-title">SEO</div>
+              <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque
+                duis
+                sit in.</div>
+            </div>
+          </a>
         </div>
         <div class="col-md-4">
-          <div class="cart-item">
-            <img class="card-icon" src="images/Group 375.png" alt="">
-            <div class="cart-title">Smm</div>
-            <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque duis
-              sit in.</div>
-          </div>
+          <a href="#">
+            <div class="cart-item">
+              <img class="card-icon" src="images/Group 375.png" alt="">
+              <div class="cart-title">SMM</div>
+              <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque
+                duis
+                sit in.</div>
+            </div>
+          </a>
         </div>
         <div class="col-md-4">
-          <div class="cart-item">
-            <img class="card-icon" src="images/Group 375.png" alt="">
-            <div class="cart-title">Google Reklamları</div>
-            <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque duis
-              sit in.</div>
-          </div>
+          <a href="#">
+            <div class="cart-item">
+              <img class="card-icon" src="images/Group 375.png" alt="">
+              <div class="cart-title">Google Reklamları</div>
+              <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque
+                duis
+                sit in.</div>
+            </div>
+          </a>
         </div>
         <div class="col-md-4">
-          <div class="cart-item">
-            <img class="card-icon" src="images/Group 375.png" alt="">
-            <div class="cart-title">Veb</div>
-            <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque duis
-              sit in.</div>
-          </div>
+          <a href="#">
+            <div class="cart-item">
+              <img class="card-icon" src="images/Group 375.png" alt="">
+              <div class="cart-title">VEB</div>
+              <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque
+                duis
+                sit in.</div>
+            </div>
+          </a>
         </div>
         <div class="col-md-4">
-          <div class="cart-item">
-            <img class="card-icon" src="images/Group 375.png" alt="">
-            <div class="cart-title">Marketİnq Konsultasiyası</div>
-            <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque duis
-              sit in.</div>
-          </div>
+          <a href="#">
+            <div class="cart-item">
+              <img class="card-icon" src="images/Group 375.png" alt="">
+              <div class="cart-title">Marketİnq Konsultasiyası</div>
+              <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque
+                duis
+                sit in.</div>
+            </div>
+          </a>
         </div>
         <div class="col-md-4">
-          <div class="cart-item">
-            <img class="card-icon" src="images/Group 375.png" alt="">
-            <div class="cart-title">Dİgər</div>
-            <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque duis
-              sit in.</div>
-          </div>
+          <a href="#">
+            <div class="cart-item">
+              <img class="card-icon" src="images/Group 375.png" alt="">
+              <div class="cart-title">Dİgər</div>
+              <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque
+                duis
+                sit in.</div>
+            </div>
+          </a>
         </div>
 
       </div>
     </div>
   </div>
+  <!--Portfolio -->
   <div id="portfolio">
     <div class="container">
       <div class="row">
@@ -298,8 +333,8 @@
             </a>
           </div>
         </div>
-        <div class="d-flex justify-content-center">
-          <button class="btn">
+        <div class="m-auto">
+          <button class="btn3">
             HAMISINA BAX
           </button>
         </div>
@@ -307,6 +342,7 @@
     </div>
 
   </div>
+  <!--Customers -->
   <div id="customers">
     <div class="container">
       <div class="row">
@@ -319,7 +355,81 @@
             away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
           </p>
         </div>
-        <div class="col-6">1</div>
+        <div class="col-6">
+          <div id="carousel">
+            <div class="container-fluid px-0">
+              <div id="secondCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li class="carousel-indicator" data-target="#secondCarousel" data-slide-to="0" class="active"></li>
+                  <li class="carousel-indicator" data-target="#secondCarousel" data-slide-to="1"></li>
+                  <li class="carousel-indicator" data-target="#secondCarousel" data-slide-to="2"></li>
+                  <li class="carousel-indicator" data-target="#secondCarousel" data-slide-to="3"></li>
+                  <li class="carousel-indicator" data-target="#secondCarousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="box">
+                      <img class="d-block image3" src="images/Rectangle 51.png" alt="First slide">
+                    </div>
+
+                    <div class="carousel-caption d-block">
+                      <blockquote>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box">
+                      <img class="d-block image3" src="images/Rectangle 53.png" alt="Second slide">
+                    </div>
+
+                    <div class="carousel-caption d-block">
+                      <blockquote>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's
+                      </blockquote>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="box"><img class="d-block img-responsive image3" src="images/Rectangle 54.png"
+                        alt="Third slide">
+                    </div>
+                    <div class="carousel-caption d-block">
+                      <blockquote>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box"><img class="d-block img-responsive image3" src="images/Rectangle 51.png"
+                        alt="Fourth slide"></div>
+
+                    <div class="carousel-caption d-block">
+                      <blockquote>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box"> <img class="d-block img-responsive image3" src="images/Rectangle 53.png"
+                        alt="Fifth slide"></div>
+
+                    <div class="carousel-caption d-block">
+                      <blockquote>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-6">
           <div class="row">
             <div class="customer col-4">
@@ -354,13 +464,14 @@
       </div>
     </div>
   </div>
+  <!--Work Porcess -->
   <div id="work-process">
     <div class="container">
-    
-        <h1 class="title">İş prosessimiz</h1>
-   
+
+      <h1 class="title">İş prosessimiz</h1>
+
       <div class="row">
-        
+
 
         <div class="col-4">
           <div class="process">
@@ -419,6 +530,7 @@
       </div>
     </div>
   </div>
+  <!--Add Page2 -->
   <div id="add-page2">
     <div class="container">
       <h1 class="title2">Hələ də axtarışdasınız?</h1>
@@ -429,16 +541,46 @@
       <button class="btn1">Let’s Talk</button>
     </div>
   </div>
+  <!--Our Team -->
   <div id="our-team">
     <div class="container">
       <h1 class="title">Komandamız</h1>
+      <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+        <div class="gallery-cell">
+          <img src="images/Rectangle 51.png" alt="">
+          <div class="name">Musa C.</div>
+          <div class="position">CEO, Partner</div>
+        </div>
+        <div class="gallery-cell">
+          <img src="images/Rectangle 54.png" alt="">
+          <div class="name">Elvin M.</div>
+          <div class="position">Qrafik Dizayner</div>
+        </div>
+        <div class="gallery-cell">
+          <img src="images/Rectangle 53.png" alt="">
+          <div class="name">Arzu H.</div>
+          <div class="position">Veb Dizayner</div>
+        </div>
+        <div class="gallery-cell">
+          <img src="images/Rectangle 51.png" alt="">
+          <div class="name">Musa C.</div>
+          <div class="position">CEO, Partner</div>
+        </div>
+        <div class="gallery-cell">
+          <img src="images/Rectangle 53.png" alt="">
+          <div class="name">Arzu H.</div>
+          <div class="position">Qrafik Dizayner</div>
+        </div>
+      </div>
+
     </div>
   </div>
+  <!--Contact Us -->
   <div id="contact-us">
     <div class="container">
       <h1 class="title">Bizə yazmaqdan çəkinməyin</h1>
       <div class="row">
-        <div class="col-6">
+        <div class="col-5">
           <div class="text">
             <div>Speak to our Business Director, Steve. With no salespeople, you always get to talk straight to one of
               our
@@ -464,8 +606,8 @@
             </div>
           </div>
           <div class="social">
-            <h3>sosial:</h3>
-            <div class="social-icons2 row">
+            <h3>SOSİAL:</h3>
+            <div class="social-icons2 row ml-0">
               <div><a href="" class="social-icon2"> <i class="fab fa-whatsapp fa-lg"></i>
                 </a></div>
               <div> <a href="" class="social-icon2"><i class="fab fa-instagram fa-lg"></i>
@@ -475,7 +617,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 offset-md-1">
           <form id="form" class="form">
             <div class="formControl">
               <label for="name">Ad / Şirkət *</label>
@@ -507,6 +649,7 @@
       </div>
     </div>
   </div>
+  <!-- Footer -->
   <div id="footer">
     <div class="container">
       <div class="row">
@@ -514,12 +657,14 @@
           <div class="row">
             <div class="col">
               <h2>Logo</h2>
-
-              <p><a href="#">
-                  Əsas Səhifə
-                </a>
-
-              </p>
+              <div class="social-icons2 row">
+                <div><a href="" class="social-icon2"> <i class="fab fa-whatsapp"></i>
+                  </a></div>
+                <div> <a href="" class="social-icon2"><i class="fab fa-instagram"></i>
+                  </a></div>
+                <div> <a href="" class="social-icon2"><i class="fab fa-facebook-f"></i></a></div>
+                <div> <a href="" class="social-icon2"><i class="fab fa-linkedin-in"></i></a></div>
+              </div>
             </div>
             <div class="col">
               <h2>SƏHİFƏLƏR</h2>
@@ -554,17 +699,17 @@
               <p><a href="#">Marketinq Konsultasiyası </a>
 
             </div>
-            <div class="col">
+            <div class="col footer-contact">
               <h2>ƏLAQƏ</h2>
-              <div class="location row">
+              <div class="row">
                 <i class="fa fa-map-marker-alt"></i>
                 <div>Əhməd Rəcəbli küç, 56.</div>
               </div>
-              <div class="phone-number1 row mr-0">
+              <div class="row">
                 <i class="fas fa-phone-alt"></i>
                 <div>+994 12 5655723</div>
               </div>
-              <div class="email-address1 row">
+              <div class="row">
                 <i class="fas fa-envelope"></i>
                 <div>info@crazyinnovations.az</div>
               </div>
@@ -579,6 +724,6 @@
 
   </div>
 </body>
-<script></script>
+<script src="app.js"></script>
 
 </html>
