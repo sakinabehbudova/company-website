@@ -206,7 +206,7 @@ body {
   font-size: 15px;
   font-weight: 600;
 }
-#menu a:hover {
+#navbar #menu a:hover {
   color: #0099fa;
   transition: 0.3s ease-in-out;
 }
@@ -328,14 +328,16 @@ body {
 }
 #portfolio ul li a {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 12px;
   line-height: 14px;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  letter-spacing: 0.0125em;
   text-transform: uppercase;
+  color: #2f353d;
 }
+
 .portfolio {
   margin-bottom: 40px;
 }
@@ -353,8 +355,9 @@ body {
   font-size: 16px;
   line-height: 23px;
   letter-spacing: 0.015em;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   color: #0099fa;
+  margin-top: 24px;
 }
 .portfolio-title {
   font-weight: 500;
@@ -370,6 +373,7 @@ body {
 }
 #customers .content {
   margin-bottom: 85px;
+  color: #4c5562;
 }
 .customer {
   height: 130px;
@@ -505,8 +509,8 @@ blockquote::after {
   height: 350px;
   margin-right: 10px;
 }
-.galler-cell img {
-  width: 100%;
+.gallery-cell img {
+  width: 240px;
   object-fit: cover;
   height: 240px;
 }
@@ -526,7 +530,7 @@ blockquote::after {
   line-height: 22px;
   letter-spacing: 0.0025em;
   color: #0099fa;
-  margin-top: 15px;
+  margin-top: 8px;
 }
 
 /*Contaxt us*/
@@ -661,8 +665,8 @@ textarea {
 .dark-mode div {
   font-size: 15px;
 }
-.label {
-  display: flex;
+.dark-mode label {
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
   height: 18px;
@@ -671,7 +675,7 @@ textarea {
   border-radius: 50px;
   border: 3px solid white;
   position: relative;
-  top: 5px;
+  top: -5px;
   left: 9px;
 }
 .checkbox {
@@ -698,24 +702,24 @@ body.dark #header {
 body.dark #header i,
 body.dark #header .phone-number,
 body.dark #header .email-address,
-body.dark #header .dark-mode{
+body.dark #header .dark-mode {
   color: #2f353d !important;
 }
-body.dark #header .ball{
+body.dark #header .ball {
   background-color: #2f353d;
 }
-body.dark #header .label{
+body.dark #header .label {
   border: 3px solid #2f353d !important;
 }
 
-body.dark #header .social-icons div{
+body.dark #header .social-icons div {
   border: 1px solid #2f353d;
 }
-body.dark  #navbar ul li a:hover,
-body.dark  #header .email-address div:hover,
-body.dark  #header .phone-number div:hover,
-body.dark  #header .phone-number:hover i,
-body.dark  #header .email-address:hover i{
+body.dark #navbar ul li a:hover,
+body.dark #header .email-address div:hover,
+body.dark #header .phone-number div:hover,
+body.dark #header .phone-number:hover i,
+body.dark #header .email-address:hover i {
   color: #0099fa !important;
   transition: 0.3s ease-in-out;
 }
@@ -724,8 +728,8 @@ body.dark #navbar {
 }
 body.dark #navbar ul li a,
 body.dark #navbar .logo a,
-body.dark #navbar .btn3{
- color: #f8f9fa;
+body.dark #navbar .btn3 {
+  color: #f8f9fa;
 }
 
 body.dark #footer {
@@ -736,9 +740,189 @@ body.dark #footer p a,
 body.dark #footer .social-icon2,
 body.dark .footer-contact h2,
 body.dark .footer-contact i,
-body.dark .footer-contact div{
+body.dark .footer-contact div {
   color: #f8f9fa !important;
 }
-body.dark #footer .social-icons2 div{
+body.dark #footer .social-icons2 div {
   border: 1px solid #f8f9fa;
+}
+
+@media (max-width: 575.98px) {
+  /*header*/
+}
+
+@media (max-width: 767.98px) {
+  .title {
+    margin-bottom: 30px;
+  }
+  .phone-number,
+  .email-address {
+    display: none !important;
+  }
+  #header .social-icons {
+    display: none;
+  }
+  /*navbar*/
+  #navbar {
+    height: 80px;
+  }
+  #navbar #menu {
+    display: none;
+  }
+  .logo {
+    margin-top: 25px;
+  }
+  /*home*/
+  #home {
+    height: 636px !important;
+  }
+  .image1 {
+    width: 333.8px;
+    height: 268.55px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+  #home .carousel-indicators {
+    justify-content: center !important;
+    bottom: 190px !important;
+  }
+  .carousel-content {
+    margin-top: 390px;
+    width: 100%;
+
+    text-align: center;
+  }
+  .carousel-content h1 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 15px;
+  }
+  .carousel-content p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .add-row1 {
+    justify-content: center;
+  }
+  /*portfolio*/
+  .nav-tabs > li {
+    width: 100%;
+  }
+  .portfolio-design {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  /*work process*/
+  #work-process {
+    text-align: center;
+  }
+  .process {
+    border: none;
+    height: 250px;
+  }
+  .process .content {
+    color: #4c5562;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #menu a {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  .btn1,
+  .btn2,
+  .btn3 {
+    width: 130px;
+    font-size: 11px !important;
+  }
+  /*carousel*/
+  .title {
+    font-size: 28px;
+  }
+  #home {
+    height: 450px;
+  }
+  #home .carousel-indicators {
+    bottom: 120px;
+  }
+  .image1 {
+    width: 320px;
+    height: 270px;
+    top: 100px;
+  }
+  .carousel-content h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .carousel-content p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  /*services*/
+  .content,
+  .content2 {
+    font-size: 14px;
+  }
+  .customers-row {
+    margin-top: 50px;
+  }
+  /*portfolio*/
+  .portfolio-title {
+    font-size: 17px;
+  }
+  /*customers*/
+  .customer {
+    text-align: center;
+  }
+  .box {
+    margin-left: 43%;
+  }
+  /*our team*/
+  .gallery-cell img {
+    width: 220px !important;
+  }
+  /*contact us*/
+  #contact-us .title {
+    margin-bottom: 60px;
+  }
+  .text {
+    font-size: 13px;
+  }
+  .formControl label {
+    font-size: 14px;
+  }
+  .address div,
+  .contact div {
+    font-size: 14px;
+  }
+  .contact {
+    margin-top: 20px;
+  }
+  /*test*/
+  .test {
+    margin-top: 50px;
+  }
+}
+.nav-tabs {
+  border: none !important;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: #fafafa !important;
+  border: none !important;
+  bottom: 0 !important;
+  color: #0099fa !important;
+}
+.nav-tabs > li > a:hover {
+  background-color: #fafafa !important;
+  border: 1px solid transparent !important;
+  opacity: 0.9;
 }
