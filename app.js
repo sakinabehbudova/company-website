@@ -57,3 +57,13 @@ function easeInOutCubic(t, b, c, d) {
   t -= 2;
   return (c / 2) * (t * t * t + 2) + b;
 }
+/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+

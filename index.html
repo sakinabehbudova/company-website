@@ -17,6 +17,10 @@
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -38,7 +42,7 @@
       <div class="row">
         <div class="col-sm-6 col-lg-8 d-flex justify-content-between">
           <div class="dark-mode row">
-         <div>Dark mode</div>
+            <div>Dark mode</div>
             <div>
               <input type="checkbox" id="checkbox" class="checkbox">
               <label class="label" for="checkbox">
@@ -83,6 +87,88 @@
           <li><a href="#">Bloq</a></li>
           <li><button class="btn3">BİZDƏN GÖRÜŞ AL</button></li>
         </ul>
+
+        <div class="d-block d-md-none mobile-menu-opener">
+          <!-- The overlay -->
+          <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+           <div class="row">
+            <div class="mobile-logo"><a href="">LOGO</a></div>
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+              <i class="fas fa-times fa-lg"></i></span>
+            </a>
+           </div>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+              
+              <ul>
+                <li>
+                  <a href="#">Əsas Səhifə</a>
+                  <hr class="mobile-line">
+                </li>
+              
+                <li>
+                  <a href="#">Haqqımızda</a>
+                  <hr class="mobile-line">
+                </li>
+                <li>
+                  <a href="#">
+                   
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Portfolio</a>
+                  <hr class="mobile-line">
+                </li>
+                <li>
+                  <a href="#">Bloq</a>
+                  <hr class="mobile-line">
+                </li>
+              </ul>
+              <div class="dropdown">
+                <button class="btn4 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Xidmətlərimiz
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">SEO</a>
+                  <a class="dropdown-item" href="#">SMM </a>
+                  <a class="dropdown-item" href="#">Google Reklamları</a>
+                  <a class="dropdown-item" href="#">Website</a>
+                  <a class="dropdown-item" href="#">Digər </a>
+                  <a class="dropdown-item" href="#">Google Reklamları</a>
+                </div>
+              </div>
+             <div class="mobile-btn"> <button class="btn1">BİZDƏN GÖRÜŞ AL</button></div>
+            </div>
+            <div class="mobile-row row">
+              <i class="fa fa-map-marker-alt"></i>
+              <div>Əhməd Rəcəbli küç, 56.</div>
+            </div>
+            <div class="mobile-row row">
+              <i class="fas fa-phone-alt"></i>
+              <div>+994 12 5655723</div>
+            </div>
+
+            <div class="mobile-row row">
+              <i class="fas fa-envelope"></i>
+              <div>info@crazyinnovations.az</div>
+            </div>
+            <div class="social-icons2 row">
+              <div><a href="" class="social-icon2"> <i class="fab fa-whatsapp"></i>
+                </a></div>
+              <div> <a href="" class="social-icon2"><i class="fab fa-instagram"></i>
+                </a></div>
+              <div> <a href="" class="social-icon2"><i class="fab fa-facebook-f"></i></a></div>
+              <div> <a href="" class="social-icon2"><i class="fab fa-linkedin-in"></i></a></div>
+            </div>
+
+          </div>
+          <!-- Use any element to open/show the overlay navigation menu -->
+          <span onclick="openNav()">
+            <i class="fas fa-bars fa-lg"></i></span>
+        </div>
+        
       </div>
     </div>
   </div>
@@ -95,7 +181,6 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         </ol>
 
         <div class="carousel-inner">
@@ -129,16 +214,7 @@
             <img src="images/Group 482.png" alt="image1" class="image1 img-responsive">
 
           </div>
-          <div class="carousel-item">
-            <div class="carousel-content">
-              <h1>Marketinqinizi növbəti səviyyələrə daşıyın.</h1>
-              <p>Müasir agentliklər yalnız müştəriləri uğur qazandıqda uğur qazanır. Bizi hərəkətə gətirən bu rəhbər
-                prinsipdir. Tamamilə müştəri müvəffəqiyyətinə odaklanacaq qədər çevik bir agentlik yaratdıq.
-              </p>
-            </div>
-            <img src="images/Group 482.png" alt="image1" class="image1 img-responsive">
 
-          </div>
         </div>
       </div>
     </div>
@@ -216,7 +292,7 @@
           <a href="#">
             <div class="cart-item">
               <img class="card-icon" src="images/Group 375.png" alt="">
-              <div class="cart-title">Marketİnq Konsultasiyası</div>
+              <div class="cart-title">Marketinq Konsultasiyası</div>
               <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque
                 duis
                 sit in.</div>
@@ -227,7 +303,7 @@
           <a href="#">
             <div class="cart-item">
               <img class="card-icon" src="images/Group 375.png" alt="">
-              <div class="cart-title">Dİgər</div>
+              <div class="cart-title">Digər</div>
               <div class="cart-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa neque
                 duis
                 sit in.</div>
@@ -254,6 +330,7 @@
 
         <!DOCTYPE html>
         <html lang="en">
+
         <head>
           <title>Bootstrap Example</title>
           <meta charset="utf-8">
@@ -262,129 +339,132 @@
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         </head>
-        <body>
-        
-        <div class="container">
-          <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#menu1">HAMISI</a></li>
-          
-            <li><a data-toggle="tab" href="#menu2">Bİznes həllərİ</a></li>
-            <li><a data-toggle="tab" href="#menu3">Rəqəmsal Marketİnq</a></li>
-            <li><a data-toggle="tab" href="#menu4">veb layİhələr</a></li>
-            <li><a data-toggle="tab" href="#menu5">qablaşdırma </a></li>
-            <li><a data-toggle="tab" href="#menu6">VİDEO</a></li>
-            <li><a data-toggle="tab" href="#menu7">DİZAYN</a></li>
-          </ul>
-          
-          <div class="tab-content">
 
-            <div id="menu1" class="tab-pane  fade in active">
-            <div class="row">
-              <div class="col-sm-4 col-lg-3">
-                <div class="portfolio">
-                  <a href="#">
-                    <img class="portfolio-img" src="images/Rectangle 43.png" alt="i">
-                    <div class="portfolio-design">Design</div>
-                    <div class="portfolio-title">Lorem Ipsum dolor sit</div>
-                  </a>
+        <body>
+
+          <div class="container">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#menu1">HAMISI</a></li>
+
+              <li><a data-toggle="tab" href="#menu2"> Rəqəmsal Marketİnq</a></li>
+              <li><a data-toggle="tab" href="#menu3">Bİznes həllərİ</a></li>
+              <li><a data-toggle="tab" href="#menu4">veb layİhələr</a></li>
+              <li><a data-toggle="tab" href="#menu5">qablaşdırma </a></li>
+              <li><a data-toggle="tab" href="#menu6">VİDEO</a></li>
+              <li><a data-toggle="tab" href="#menu7">DİZAYN</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+              <div id="menu1" class="tab-pane  fade in active">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="portfolio">
+                      <a href="#">
+                        <img class="portfolio-img" src="images/Rectangle 43.png" alt="i">
+                        <div class="portfolio-design">Design</div>
+                        <div class="portfolio-title">Lorem Ipsum dolor sit</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="portfolio">
+                      <a href="#">
+                        <img class="portfolio-img" src="images/Rectangle 44.png" alt="i">
+                        <div class="portfolio-design">Design</div>
+                        <div class="portfolio-title">Lorem Ipsum dolor sit</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="portfolio">
+                      <a href="#">
+                        <img class="portfolio-img" src="images/Rectangle 45.png" alt="i">
+                        <div class="portfolio-design">Design</div>
+                        <div class="portfolio-title">Lorem Ipsum dolor sit</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="portfolio">
+                      <a href="#">
+                        <img class="portfolio-img" src="images/Rectangle 46.png" alt="i">
+                        <div class="portfolio-design">Design</div>
+                        <div class="portfolio-title">Lorem Ipsum dolor sit</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="portfolio">
+                      <a href="#">
+                        <img class="portfolio-img" src="images/Rectangle 43.png" alt="i">
+                        <div class="portfolio-design">Design</div>
+                        <div class="portfolio-title">Lorem Ipsum dolor sit</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="portfolio">
+                      <a href="#">
+                        <img class="portfolio-img" src="images/Rectangle 44.png" alt="i">
+                        <div class="portfolio-design">Design</div>
+                        <div class="portfolio-title">Lorem Ipsum dolor sit</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="portfolio">
+                      <a href="#">
+                        <img class="portfolio-img" src="images/Rectangle 45.png" alt="i">
+                        <div class="portfolio-design">Design</div>
+                        <div class="portfolio-title">Lorem Ipsum dolor sit</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="portfolio">
+                      <a href="#">
+                        <img class="portfolio-img" src="images/Rectangle 46.png" alt="i">
+                        <div class="portfolio-design">Design</div>
+                        <div class="portfolio-title">Lorem Ipsum</div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-4 col-lg-3">
-                <div class="portfolio">
-                  <a href="#">
-                    <img class="portfolio-img" src="images/Rectangle 44.png" alt="i">
-                    <div class="portfolio-design">Design</div>
-                    <div class="portfolio-title">Lorem Ipsum dolor sit</div>
-                  </a>
-                </div>
+              <div id="menu2" class="tab-pane fade">
+
+                <h3>Rəqəmsal Marketinq</h3>
+
               </div>
-              <div class="col-sm-4 col-lg-3">
-                <div class="portfolio">
-                  <a href="#">
-                    <img class="portfolio-img" src="images/Rectangle 45.png" alt="i">
-                    <div class="portfolio-design">Design</div>
-                    <div class="portfolio-title">Lorem Ipsum dolor sit</div>
-                  </a>
-                </div>
+              <div id="menu3" class="tab-pane fade">
+                <h3> Bİznes həlləri</h3>
+
               </div>
-              <div class="col-sm-4 col-lg-3">
-                <div class="portfolio">
-                  <a href="#">
-                    <img class="portfolio-img" src="images/Rectangle 46.png" alt="i">
-                    <div class="portfolio-design">Design</div>
-                    <div class="portfolio-title">Lorem Ipsum dolor sit</div>
-                  </a>
-                </div>
+              <div id="menu4" class="tab-pane fade">
+                <h3>veb layihələr</h3>
+
               </div>
-              <div class="col-sm-4 col-lg-3">
-                <div class="portfolio">
-                  <a href="#">
-                    <img class="portfolio-img" src="images/Rectangle 43.png" alt="i">
-                    <div class="portfolio-design">Design</div>
-                    <div class="portfolio-title">Lorem Ipsum dolor sit</div>
-                  </a>
-                </div>
+              <div id="menu5" class="tab-pane fade">
+                <h3>Qablaşdırma</h3>
+
               </div>
-              <div class="col-sm-4 col-lg-3">
-                <div class="portfolio">
-                  <a href="#">
-                    <img class="portfolio-img" src="images/Rectangle 44.png" alt="i">
-                    <div class="portfolio-design">Design</div>
-                    <div class="portfolio-title">Lorem Ipsum dolor sit</div>
-                  </a>
-                </div>
+              <div id="menu6" class="tab-pane fade">
+                <h3>Video</h3>
+
               </div>
-              <div class="col-sm-4 col-lg-3">
-                <div class="portfolio">
-                  <a href="#">
-                    <img class="portfolio-img" src="images/Rectangle 45.png" alt="i">
-                    <div class="portfolio-design">Design</div>
-                    <div class="portfolio-title">Lorem Ipsum dolor sit</div>
-                  </a>
-                </div>
+              <div id="menu7" class="tab-pane fade">
+                <h3>Dizayn</h3>
+
               </div>
-              <div class="col-sm-4 col-lg-3">
-                <div class="portfolio">
-                  <a href="#">
-                    <img class="portfolio-img" src="images/Rectangle 46.png" alt="i">
-                    <div class="portfolio-design">Design</div>
-                    <div class="portfolio-title">Lorem Ipsum</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div id="menu2" class="tab-pane fade">
-              <h3> Bİznes həlləri</h3>
-            
-            </div>
-            <div id="menu3" class="tab-pane fade">
-              <h3>Rəqəmsal Marketinq</h3>
-            
-            </div>
-            <div id="menu4" class="tab-pane fade">
-              <h3>veb layihələr</h3>
-         
-            </div>
-            <div id="menu5" class="tab-pane fade">
-              <h3>Qablaşdırma</h3>
-          
-            </div>
-            <div id="menu6" class="tab-pane fade">
-              <h3>Video</h3>
-            
-            </div>
-            <div id="menu7" class="tab-pane fade">
-              <h3>Dizayn</h3>
-            
             </div>
           </div>
-        </div>
-        
+
         </body>
+
         </html>
-        
-     
+
+
         <div class="m-auto col-sm-12 d-flex justify-content-center">
           <button class="btn3">
             HAMISINA BAX
@@ -514,6 +594,7 @@
           </div>
         </div>
       </div>
+      <hr class="d-block d-md-none line1">
     </div>
   </div>
   <!--Work Porcess -->
@@ -597,7 +678,7 @@
   <div id="our-team">
     <div class="container">
       <h1 class="title">Komandamız</h1>
-      <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+      <div class="gallery js-flickity d-none d-md-block" data-flickity-options='{ "wrapAround": true }'>
         <div class="gallery-cell">
           <img src="images/Rectangle 51.png" alt="">
           <div class="name">Musa C.</div>
@@ -622,6 +703,36 @@
           <img src="images/Rectangle 53.png" alt="">
           <div class="name">Arzu H.</div>
           <div class="position">Qrafik Dizayner</div>
+        </div>
+      </div>
+      <div class="d-block d-md-none text-center our-team-mobile">
+        <div class="row">
+          <div class="col">
+            <div class="team-mobile">
+              <img src="images/Rectangle 51.png" alt="">
+              <div class="name">Musa C.</div>
+              <div class="position">CEO, Partner</div>
+
+            </div>
+            <div class="team-mobile">
+              <img src="images/Rectangle 51.png" alt="">
+              <div class="name">Musa C.</div>
+              <div class="position">CEO, Partner</div>
+
+            </div>
+            <div class="team-mobile">
+              <img src="images/Rectangle 53.png" alt="">
+              <div class="name">Arzu H.</div>
+              <div class="position">Web Dizayner</div>
+
+            </div>
+            <div class="team-mobile">
+              <img src="images/Rectangle 51.png" alt="">
+              <div class="name">Elvin M.</div>
+              <div class="position">Qrafik Dizayner</div>
+
+            </div>
+          </div>
         </div>
       </div>
 
@@ -699,6 +810,7 @@
           </form>
         </div>
       </div>
+      <hr class="d-block d-md-none line2">
     </div>
   </div>
   <!-- Footer -->
@@ -707,8 +819,9 @@
       <div class="row">
         <div class="col-sm-12 col-lg-6">
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-md-4">
               <h2>Logo</h2>
+              <div class="footer-text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
               <div class="social-icons2 row">
                 <div><a href="" class="social-icon2"> <i class="fab fa-whatsapp"></i>
                   </a></div>
@@ -717,8 +830,11 @@
                 <div> <a href="" class="social-icon2"><i class="fab fa-facebook-f"></i></a></div>
                 <div> <a href="" class="social-icon2"><i class="fab fa-linkedin-in"></i></a></div>
               </div>
+              <div class="d-none d-md-block footer-text2">
+                © 2021 - Corporative Business Solutions.
+              </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-md-4">
               <h2>SƏHİFƏLƏR</h2>
               <p><a href="#"> Əsas Səhifə </a>
               <p><a href="#"> Haqqımızda </a>
@@ -728,7 +844,7 @@
               <p><a href="#">Əlaqə </a>
 
             </div>
-            <div class="col">
+            <div class="footer-row col-12 col-md-4">
               <h2>RƏQƏMSAL</h2>
               <p><a href="#"> SMM </a>
               <p><a href="#"> Veb </a>
@@ -740,9 +856,9 @@
           </div>
 
         </div>
-        <div class="test col-sm-12 col-lg-6">
+        <div class="footer-row col-sm-12 col-lg-6">
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-md-6">
               <h2>DİGƏR XİDMƏTLƏR</h2>
               <p><a href="#"> Brendinq </a>
               <p><a href="#"> Qrafik Dizayn </a>
@@ -751,7 +867,7 @@
               <p><a href="#">Marketinq Konsultasiyası </a>
 
             </div>
-            <div class="col footer-contact">
+            <div class="footer-row col-12 col-md-6 footer-contact">
               <h2>ƏLAQƏ</h2>
               <div class="row">
                 <i class="fa fa-map-marker-alt"></i>
@@ -761,14 +877,16 @@
                 <i class="fas fa-phone-alt"></i>
                 <div>+994 12 5655723</div>
               </div>
+
               <div class="row">
                 <i class="fas fa-envelope"></i>
-                <div>info@crazyinnovations.az</div>
+                <div>info@cbs.az</div>
               </div>
-
-
             </div>
           </div>
+        </div>
+        <div class="d-block d-md-none footer-text2">
+          © 2021 - Corporative Business Solutions.
         </div>
       </div>
     </div>
