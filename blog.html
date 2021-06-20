@@ -28,11 +28,12 @@
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+  <script src=" https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <title>Company Website</title>
 </head>
 
 <body>
-  <section id="about-us">
+  <section id="blog-page">
     <!--Header -->
     <div id="header">
       <div class="container">
@@ -78,10 +79,10 @@
           <div class="logo"><a href="">LOGO</a></div>
           <ul id="menu">
             <li><a href="index.html">Əsas Səhifə</a></li>
-            <li><a class="active" href="#">Haqqımızda</a></li>
+            <li><a href="aboutUs.html">Haqqımızda</a></li>
             <li><a href="#">Xidmətlərimiz</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog.html">Bloq</a></li>
+            <li><a class="active" href="#">Bloq</a></li>
             <li><button class="btn3">BİZDƏN GÖRÜŞ AL</button></li>
           </ul>
 
@@ -170,102 +171,243 @@
         </div>
       </div>
     </div>
-    <!--About Us Header-->
-    <div id="aboutUs-header">
+    <!--Header 2-->
+    <div>
       <div id="header2">
         <div class="container">
-          <h5>HAQQIMIZDA</h5>
-          <h3>We are a new kind of digital partner</h3>
+          <h5>Bloq</h5>
+          <h3>Thoughts. Ideas. Opinion. News.</h3>
         </div>
       </div>
     </div>
-    <!--About Us -->
-    <div id="aboutUs">
-      <div class="aboutUs-inner row">
-        <div class="col-md-6 pl-0 order-2 order-md-1">
-          <img src="images/image.png" alt="">
-        </div>
-        <div class="offset-md-1 col-md-4 offset-md-1 order-1 order-md-2">
-          <div class="container">
-            <h5>WELCOME TO CRAZY INNOVATIONS</h5>
-            <h2>We Are Able to Provide Your Digital Needs</h2>
-            <p>Crazy Innovations .... ildir ... .... .... .... ... saheleri uzre fealiyyet gosteren
-              reklam agentliyidir ve saire ve saire.</p>
-
-            <p> We wrap cross-disciplinary teams around your business to drive the outcomes you need to compete.</p>
-
-
-            <button class="btn3">BİZDƏN GÖRÜŞ AL</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Our Team -->
-    <div id="our-team">
+    <!-- Blog  -->
+    <div>
       <div class="container">
-        <h1 class="title">Komandamız</h1>
-        <div class="gallery js-flickity d-none d-md-block" data-flickity-options='{ "wrapAround": true }'>
-          <div class="gallery-cell">
-            <img src="images/Rectangle 51.png" alt="">
-            <div class="name">Musa C.</div>
-            <div class="position">CEO, Partner</div>
+        <div id="blog">
+          <div class="blog-list">
+            <input type='hidden' id='current_page' />
+            <input type='hidden' id='show_per_page' />
+            <ul class="row" id="pagingBox">
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-6 col-lg-4">
+                <div class="blog-box">
+                  <div class="blog-img">
+                    <img src="images/Rectangle 128.png" alt="">
+                  </div>
+                  <div class="blog-info container">
+                    <div class="row">
+                      <div class="blog-text">Insight</div>
+                      <div class="blog-date"> 9 December 2020</div>
+                    </div>
+                    <div class="blog-title">The Manchester restaurants that are embracing digital</div>
+                  </div>
+                </div>
+              </li>
+
+
+
+            </ul>
           </div>
-          <div class="gallery-cell">
-            <img src="images/Rectangle 54.png" alt="">
-            <div class="name">Elvin M.</div>
-            <div class="position">Qrafik Dizayner</div>
-          </div>
-          <div class="gallery-cell">
-            <img src="images/Rectangle 53.png" alt="">
-            <div class="name">Arzu H.</div>
-            <div class="position">Veb Dizayner</div>
-          </div>
-          <div class="gallery-cell">
-            <img src="images/Rectangle 51.png" alt="">
-            <div class="name">Musa C.</div>
-            <div class="position">CEO, Partner</div>
-          </div>
-          <div class="gallery-cell">
-            <img src="images/Rectangle 53.png" alt="">
-            <div class="name">Arzu H.</div>
-            <div class="position">Qrafik Dizayner</div>
-          </div>
+          <div id='page_navigation d-none d-md-block'></div>
         </div>
-        <div class="d-block d-md-none text-center our-team-mobile">
-          <div class="row">
-            <div class="col">
-              <div class="team-mobile">
-                <img src="images/Rectangle 51.png" alt="">
-                <div class="name">Musa C.</div>
-                <div class="position">CEO, Partner</div>
-
-              </div>
-              <div class="team-mobile">
-                <img src="images/Rectangle 51.png" alt="">
-                <div class="name">Musa C.</div>
-                <div class="position">CEO, Partner</div>
-
-              </div>
-              <div class="team-mobile">
-                <img src="images/Rectangle 53.png" alt="">
-                <div class="name">Arzu H.</div>
-                <div class="position">Web Dizayner</div>
-
-              </div>
-              <div class="team-mobile">
-                <img src="images/Rectangle 51.png" alt="">
-                <div class="name">Elvin M.</div>
-                <div class="position">Qrafik Dizayner</div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-
     </div>
-    <hr class="line3 m-0">
+    <hr class="line3 m-0 d-none d-md-block">
     <!-- Footer -->
     <div id="footer">
       <div class="container">
@@ -349,5 +491,6 @@
   </section>
 </body>
 <script src="app.js"></script>
+<script src="pagination.js"></script>
 
 </html>
