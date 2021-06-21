@@ -1202,7 +1202,7 @@ body.dark #footer .social-icons2 div {
   right: 40px;
   font-size: 20px;
   color: white;
-}
+} /*
 .dropdown {
   margin-bottom: 20px;
 }
@@ -1229,7 +1229,7 @@ body.dark #footer .social-icons2 div {
   padding-left: 5px !important;
   padding-top: 15px !important;
 }
-
+*/
 /*About Us Page*/
 #aboutUs {
   overflow-x: hidden !important;
@@ -1360,4 +1360,75 @@ a {
 }
 #portfolio-page .portfolio-design {
   margin-bottom: 7px !important;
+}
+/*pop-up*/
+
+#popup {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+}
+#popup ul {
+  list-style: none;
+  padding: 0;
+  height: 60px;
+}
+#popup ul li {
+  display: inline-block;
+}
+.services-popup {
+  overflow: hidden;
+}
+.services-popup,
+.services-popup p a {
+  color: #fff !important;
+}
+#popup .services-popup li a {
+  display: block;
+  padding: 0px 40px;
+  text-decoration: none;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+}
+#popup ul li:hover > ul {
+  display: block;
+}
+#popup ul ul {
+  background: #2f353d;
+  padding: 0;
+  text-align: center;
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 135px;
+  left: 0px;
+  height: auto;
+  padding-bottom: 25px;
+  z-index: 100;
+}
+#popup-header {
+  color: #2f353d !important;
+}
+.services-popup h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.services-popup p a {
+  margin-bottom: 15px;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  text-align: center;
+  letter-spacing: 0.0025em;
+  padding: 0 !important;
+  color: #ffffff;
+  font-weight: 500 !important;
+}
+.line4 {
+  border-top: 1px solid #d0d0d0;
 }
