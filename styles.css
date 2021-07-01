@@ -1,5 +1,19 @@
+@font-face {
+  font-family: Gotham-light;
+  src: url('files/Gotham Normal/Gotham Light.otf');
+}
+@font-face {
+  font-family: Gotham-bold;
+  src: url('files/Gotham Normal/Gotham\ Bold.otf');
+}
+@font-face {
+  font-family: Gotham-medium;
+  src: url('files/Gotham Normal/Gotham Medium.otf');
+}
+
+
 body {
-  /* font-family: 'Montserrat', sans-serif !important;*/
+ font-family: Gotham-light !important;
 }
 /*Back-To-Top-Btn*/
 #back-to-top-btn {
@@ -206,6 +220,7 @@ body {
   font-weight: 600;
   font-size: 17px;
   letter-spacing: 0.01em;
+  
 }
 #navbar #menu a.active {
   color: #0099fa;
@@ -288,6 +303,7 @@ body {
   line-height: 41px;
   letter-spacing: 0.0025em;
   color: #2f353d;
+  font-family: Gotham-bold !important;
 }
 #services a {
   text-decoration: none;
