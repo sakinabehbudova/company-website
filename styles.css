@@ -1,19 +1,17 @@
 @font-face {
   font-family: Gotham-light;
-  src: url('files/Gotham Normal/Gotham Light.otf');
+  src: url("files/Gotham Normal/Gotham Light.otf");
 }
 @font-face {
   font-family: Gotham-bold;
-  src: url('files/Gotham Normal/Gotham\ Bold.otf');
+  src: url("files/Gotham Normal/Gotham\ Bold.otf");
 }
 @font-face {
   font-family: Gotham-medium;
-  src: url('files/Gotham Normal/Gotham Medium.otf');
+  src: url("files/Gotham Normal/Gotham Medium.otf");
 }
-
-
 body {
- font-family: Gotham-light !important;
+  font-family: Gotham-light !important;
 }
 /*Back-To-Top-Btn*/
 #back-to-top-btn {
@@ -217,10 +215,9 @@ body {
   margin-right: 20px;
   margin-left: 20px;
   color: #2f353d;
-  font-weight: 600;
+  font-family: Gotham-medium;
   font-size: 17px;
   letter-spacing: 0.01em;
-  
 }
 #navbar #menu a.active {
   color: #0099fa;
@@ -395,6 +392,7 @@ body {
   align-items: center;
   text-transform: uppercase;
   color: #2f353d;
+  font-weight: bold;
 }
 
 .portfolio {
@@ -414,9 +412,9 @@ body {
   font-size: 16px;
   line-height: 23px;
   letter-spacing: 0.015em;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   color: #0099fa;
-  margin-top: 22px;
+  margin-top: 16px;
   text-transform: capitalize;
 }
 .portfolio-title {
@@ -516,7 +514,22 @@ blockquote::after {
 }
 .process {
   height: 290px;
-  border-bottom: 1px dashed #000000;
+  /* border-bottom: 1px dashed #000000;*/
+}
+.line18 {
+  position: relative;
+  top: -30px;
+}
+.arrow1,
+.arrow2 {
+  position: absolute;
+  top: -23px;
+}
+.arrow1 {
+  left: 30%;
+}
+.arrow2 {
+  right: 35%;
 }
 .process img {
   margin-bottom: 30px;
@@ -554,6 +567,45 @@ blockquote::after {
   margin-bottom: 40px;
 }
 /*Our Team*/
+.tcb-product-slider {
+  /* padding: 100px 0; */
+}
+.tcb-product-slider .carousel-control {
+  width: 5%;
+}
+.tcb-product-item a {
+  color: #147196;
+}
+.tcb-product-item a:hover {
+  text-decoration: none;
+}
+.tcb-product-item .tcb-hline {
+  margin: 10px 0;
+  height: 1px;
+  background: #ccc;
+}
+.right,
+.left {
+  background: none !important;
+}
+@media all and (max-width: 768px) {
+  .tcb-product-item {
+    margin-bottom: 30px;
+  }
+}
+.tcb-product-photo {
+  text-align: center;
+  height: 240px;
+  background: #fff;
+}
+.tcb-product-photo img {
+  height: 100%;
+  display: inline-block;
+}
+.tcb-product-info {
+  padding: 15px;
+}
+
 #our-team {
   padding: 80px 0;
   background: #fafafa;
@@ -624,7 +676,7 @@ blockquote::after {
   color: #4c5562;
 }
 .contact {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .social-icons2 div {
   width: 32px;
@@ -667,6 +719,8 @@ textarea {
 }
 .formControl label {
   margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 400;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -684,12 +738,17 @@ textarea {
   padding: 80px 0;
 }
 #footer h2 {
-  font-weight: 600;
+  font-weight: 350;
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 16px;
   letter-spacing: 0.0015em;
   color: #2f353d;
+  font-family: "gotham-medium";
+}
+#footer p {
+  line-height: 22px;
+  margin-bottom: 16px;
 }
 #footer p a,
 .footer-contact div {
@@ -731,6 +790,9 @@ textarea {
   line-height: 18px;
   letter-spacing: 0.005em;
   color: #4c5562;
+}
+.footer-row i {
+  color: #323232;
 }
 /*Dark Mode*/
 .dark-mode {
@@ -880,6 +942,10 @@ body.dark #footer .social-icons2 div {
     left: 50%;
     transform: translate(-50%, -20%);
   }
+  .image1 {
+    width: 320px !important;
+    top: 100px !important;
+  }
   #home .carousel-indicators {
     justify-content: center !important;
     bottom: 200px !important;
@@ -978,6 +1044,7 @@ body.dark #footer .social-icons2 div {
     font-size: 24px;
   }
   /*our team*/
+
   #our-team {
     padding-bottom: 26px;
   }
@@ -1021,7 +1088,6 @@ body.dark #footer .social-icons2 div {
   .footer-row {
     margin-top: 56px;
   }
-
   #footer p a,
   .footer-contact div {
     font-size: 16px;
