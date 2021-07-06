@@ -195,6 +195,9 @@ body {
   font-size: 22px;
   font-weight: 800;
 }
+.ml-60{
+  margin-left: 60px;
+}
 #menu {
   /*  justify-content: flex-end !important;*/
   padding-right: 0 !important;
@@ -587,6 +590,14 @@ blockquote::after {
 .right,
 .left {
   background: none !important;
+  color: #2f353d !important;
+  opacity: 1 !important;
+}
+.left {
+  left: -80px !important;
+}
+.right {
+  right: -80px !important;
 }
 @media all and (max-width: 768px) {
   .tcb-product-item {
@@ -596,7 +607,7 @@ blockquote::after {
 .tcb-product-photo {
   text-align: center;
   height: 240px;
-  background: #fff;
+  
 }
 .tcb-product-photo img {
   height: 100%;
@@ -610,8 +621,35 @@ blockquote::after {
   padding: 80px 0;
   background: #fafafa;
 }
-
-.gallery {
+#carousel-example-generic {
+  margin-top: 50px;
+}
+#carousel-example-generic .carousel-inner {
+  height: auto !important;
+}
+#our-team .carousel-control {
+  font-size: inherit !important;
+  color: black;
+  opacity: 1 !important;
+  text-shadow: none !important;
+  top: -90px !important;
+}
+#our-team .carousel-control.left {
+  left: -8% !important;
+}
+#our-team .carousel-control.right {
+  right: -8% !important;
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next,
+.carousel-control .icon-prev{
+  font-size: 0 !important;
+}
+.glyphicon-chevron-right img{
+  transform: rotate(180deg);
+}
+ .gallery {
   text-align: center;
   margin-top: 65px;
 }
