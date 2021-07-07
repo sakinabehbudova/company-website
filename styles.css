@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Gotham-light;
-    src: url("files/Gotham Normal/Gotham Light.otf");
+    font-family: Gotham-regular;
+    src: url("files/Gotham Normal/Gotham Book.otf");
 }
 
 @font-face {
@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: Gotham-light !important;
+    font-family:  Gotham-regular !important;
 }
 
 /*Back-To-Top-Btn*/
@@ -2202,9 +2202,10 @@ img.review-stars {
 /** ARROWS **/
 
 .product-carousel .right {
-    right: 0;
+    right: -8%;
     position: absolute;
-    top: 30%;
+    top: 42%;
+    transform: rotate(180deg);
 }
 
 .product-carousel {
@@ -2212,19 +2213,22 @@ img.review-stars {
 }
 
 .product-carousel .right:before {
-    content: url("images/smm.svg");
+    content: url("images/Vector-arrow.svg");
     position: absolute;
+    cursor: pointer;
 }
 
 .product-carousel .left:before {
-    content: url("images/seo.svg");
+    content: url("images/Vector-arrow.svg");
     position: absolute;
+    cursor: pointer;
 }
 
 .product-carousel .left {
     position: absolute;
-    left: 0px;
-    top: 30%;
+    left: -8%;
+    top: 35%;
+   
 }
 
 /** SLICK SLIDER CSS **/
