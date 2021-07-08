@@ -21,7 +21,7 @@ body {
 #back-to-top-btn {
     position: fixed;
     display: none;
-    right: 120px;
+    right: 60px;
     bottom: 40px;
     z-index: 99;
     border: none;
@@ -218,7 +218,9 @@ body {
 .logo {
     margin-top: 35px;
 }
-
+.mr_60{
+    margin-right: 54px;
+}
 .logo a {
     text-decoration: none !important;
     color: #2f353d;
@@ -262,6 +264,10 @@ body {
     color: #0099fa !important;
     transition: 0.3s ease-in-out;
 }
+.popup-header i{
+    margin-left: 8px;
+    margin-top: 3px;
+}
 
 .navbar2 {
     background: #f8f9fa !important;
@@ -270,7 +276,7 @@ body {
 /*Home*/
 #home {
     height: 552px;
-    background-color: #4c5562;
+
 }
 
 #carouselExampleIndicators {
@@ -314,7 +320,7 @@ body {
 
 .carousel-content h1 {
     margin-bottom: 25px;
-    font-weight: bold;
+    font-family: 'Gotham-bold' !important;
     font-size: 45px;
     line-height: 58px;
 }
@@ -322,17 +328,68 @@ body {
 .carousel-content p {
     font-size: 16px;
     line-height: 26px;
-    /* or 162% */
-
+   
     letter-spacing: 0.02em;
 }
+/*home2*/
+#home2{
+    height: 552px;
+}
+#home2 #carouselExampleIndicators {
+    position: relative;
+}
 
+#home2 .carousel-indicators {
+    position: absolute;
+    justify-content: flex-start !important;
+}
+
+#home2 .carousel-indicators li {
+    margin-top: 0 !important;
+    margin-right: 16px;
+    width: 42px;
+    height: 0.5px;
+}
+
+#home2 .carousel-indicators li.active {
+    margin-top: 0 !important;
+}
+#home2 img{
+    height: 552px;
+}
+#home2 .carousel-caption {
+    text-align: left;
+    top: 94px;
+    left:0 !important;
+    width: 100%;
+}
+
+#home2 h1{
+    font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 58px;
+font-family: 'Gotham-bold' !important;
+color: #F8F9FA;
+}
+#home2 .first-header{
+    margin-bottom: -20px;
+}
+#home2 p{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+margin-top: 16px;
+line-height: 26px;
+letter-spacing: 0.02em;
+color: #F8F9FA;
+width: 50%;
+}
 /*Add Page1*/
 #add-page1 {
     background: #2f353d;
     padding: 80px 0;
 }
-
 /*Services*/
 #services {
     padding-top: 80px;
@@ -896,7 +953,6 @@ textarea {
     line-height: 22px;
     margin-bottom: 16px;
 }
-
 #footer p a,
 .footer-contact div {
     font-weight: normal;
@@ -905,7 +961,9 @@ textarea {
     letter-spacing: 0.0025em;
     color: #4c5562;
 }
-
+.footer-contact div{
+    font-size: 14.5px;
+}
 #footer .social-icons2 {
     margin-left: 0;
     margin-top: 29px;
@@ -1952,6 +2010,7 @@ body.dark #footer .social-icons2 div {
     color: #4c5562;
 }
 
+/*
 .popup-header::after {
     content: ">";
     position: absolute;
@@ -1965,7 +2024,7 @@ body.dark #footer .social-icons2 div {
     transform: rotate(270deg) !important;
     transition: transform 0.3s ease-in-out;
 }
-
+*/
 /*Blog Post Page*/
 #blog-post {
     padding: 80px 0;
@@ -2123,7 +2182,7 @@ body.dark #footer .social-icons2 div {
 /*slider-our-team*/
 
 .product-image {
-    width: 100%;
+    width: 95% !important;
     height: 240px;
     object-fit: cover;
 }
@@ -2137,13 +2196,14 @@ body.dark #footer .social-icons2 div {
 
 .product-carousel .product {
     box-sizing: border-box;
-    margin: 0 10px;
     text-align: center;
     display: flex;
     flex-flow: column;
     align-content: space-between;
 }
-
+.product1{
+    
+}
 .product-carousel .product-top {
     width: 100%;
 }
@@ -2155,6 +2215,8 @@ body.dark #footer .social-icons2 div {
 .product-carousel .product-image {
     align-self: flex-start;
     width: 100%;
+    height: 240px;
+    object-fit: cover;
 }
 
 img.review-stars {
@@ -2202,7 +2264,7 @@ img.review-stars {
 /** ARROWS **/
 
 .product-carousel .right {
-    right: -8%;
+    right: -70px;
     position: absolute;
     top: 42%;
     transform: rotate(180deg);
@@ -2226,7 +2288,7 @@ img.review-stars {
 
 .product-carousel .left {
     position: absolute;
-    left: -8%;
+    left: -70px;
     top: 35%;
    
 }
@@ -2307,4 +2369,26 @@ img.review-stars {
 
 .slick-arrow.slick-hidden {
     display: none;
+}
+/* slider CSS */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+	
+
+.slick-wrapper {
+	width: 100%;
+}
+.slide-item {
+width:240px;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+	border: 1px solid white;
+}
+.slick1 img{
+height: 240px;
+}
+.slide-item1{
+   margin-right: 12px;
 }
