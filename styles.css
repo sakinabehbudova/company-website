@@ -267,10 +267,15 @@
         color: #0099fa !important;
         transition: 0.3s ease-in-out;
     }
+    .popup-header:hover i {
+       transform: rotate(180deg);
+       transition: .3s ease-in-out;
+    }
     
     .popup-header i {
-        margin-left: 8px;
-        margin-top: 3px;
+       position: absolute;
+       top: 45px;
+      right: -20px;
     }
     
     .navbar2 {
@@ -521,6 +526,26 @@
     }
     /*Portfolio*/
     
+    .zoom{
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    height: 225px;
+    float:left;
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
+.zoom img {
+    transition-duration: 1s;
+    margin: 0 auto;
+    display: block;
+}
+.zoom img:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    z-index: 0;
+}
     #portfolio {
         background-color: #fafafa;
         padding: 80px 0;
@@ -532,6 +557,10 @@
         justify-content: center;
         width: 100%;
         margin-bottom: 60px;
+    }
+    .nav-tabs>li{
+        margin-left: 5px;
+        margin-right: 5px;
     }
     
     #portfolio ul li a {
@@ -596,7 +625,10 @@
     #customers .header-row {
         margin-bottom: 85px;
     }
-    
+    #customers .carousel-caption{
+        left: 10% !important;
+        right: 10% !important;
+    }
     .customer {
         height: 157px;
     }
@@ -663,7 +695,7 @@
         content: "\201C";
         display: block;
         font-size: 80px;
-        left: -100px;
+        left: -150px;
         top: -20px;
         position: relative;
         height: 0;
@@ -674,7 +706,7 @@
         content: "\201C";
         display: block;
         font-size: 80px;
-        right: -100px;
+        right: -150px;
         top: 20px;
         position: relative;
         height: 0;
@@ -960,7 +992,7 @@
     }
     
     .formControl label {
-        margin-bottom: 4px;
+        margin-bottom: 8px;
         font-size: 16px;
         font-weight: 400;
     }
@@ -982,6 +1014,7 @@
     
     #footer {
         padding: 80px 0;
+        border-top: .7px solid #d0d0d0;
     }
     
     #footer h2 {
@@ -1102,11 +1135,16 @@
     }
     /*Dark Mode */
     
-    body.dark .logo-dark {
+    body.dark .logo-dark,
+    body.dark .customer-icon-dark{
         display: none !important;
     }
+        body.dark .customer-icon-white{
+            float: right;
+}
     
-    body.dark .logo-white {
+    body.dark .logo-white,
+    body.dark .customer-icon-white {
         display: block !important;
     }
     
@@ -1143,11 +1181,15 @@
     }
     
     body.dark #navbar,
-    body.dark #portfolio-page #portfolio,
-    body.dark #blog-post {
+    body.dark #portfolio,
+    body.dark #blog-post,
+    body.dark #our-team {
         background-color: #2f353d !important;
     }
-    
+    body.dark #portfolio ul li a{
+        color:#f8f9fa  ;
+    }
+
     body.dark .fa-bars,
     body.dark #navbar ul li a,
     body.dark #navbar .logo a,
@@ -1173,7 +1215,7 @@
     body.dark .services-page .title5,
     body.dark .card .btn,
     body.dark .card-body,
-    body.dark #portfolio-page .portfolio-title,
+    body.dark .portfolio-title,
     body.dark .other-portfolioes .portfolio-title,
     body.dark .text2,
     body.dark .title7,
@@ -1545,6 +1587,16 @@
         }
     }
     
+     @media screen and (min-device-width: 1880px) and (max-device-width: 1920px) {
+        #home2 .carousel-indicators {
+            left: 20.4% !important;
+        }
+    }
+     @media screen and (min-device-width: 1500px) and (max-device-width: 1600px) {
+        #home2 .carousel-indicators {
+            left: 14.4% !important;
+        }
+    }
     @media screen and (min-device-width: 1395px) and (max-device-width: 1440px) {
         #home2 .carousel-indicators {
             left: 10.5% !important;
@@ -1579,7 +1631,7 @@
     .nav-tabs>li>a:hover {
         background-color: transparent !important;
         border: 1px solid transparent !important;
-        opacity: 0.9;
+        color: #0099fa !important;
     }
     
     .fa-bars {
@@ -1957,10 +2009,10 @@
         font-family: "Gotham-regular" !important;
     }
     
-    .services-popup p a {
+    .services-popup p  {
         margin-bottom: 15px;
         font-size: 12px !important;
-        line-height: 14px !important;
+        line-height: 20px !important;
         text-align: center;
         letter-spacing: 0.0025em !important;
         padding: 0 !important;
@@ -1998,6 +2050,7 @@
         letter-spacing: 0.0015em;
         color: #0099fa;
         margin-bottom: 24px;
+        text-transform: uppercase;
     }
     
     .title4 {
